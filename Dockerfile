@@ -1,6 +1,7 @@
 #Dockerfile
-FROM redis/base:v0.01
-MAINTAINER geyijun<geyijun@xiongmaitech.com>
+#FROM redis/base:v0.01
+FROM daocloud.io/peizhiluo007/redis:last
+MAINTAINER peizhiluo007<25159673@qq.com>
 
 #采用supervisor来管理多任务
 COPY supervisord.conf /etc/supervisor/supervisord.conf
